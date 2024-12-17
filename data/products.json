@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "PC",
+    "description": "Ordinador de sobretaula"
+  },
+  {
+    "id": 2,
+    "name": "Tablet",
+    "description": "Una tableta tipo Apple"
+  },
+  {
+    "id": 3,
+    "name": "Phone",
+    "description": "Un telèfon inteligent"
+  }
+]
