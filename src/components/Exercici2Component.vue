@@ -1,8 +1,9 @@
 <script setup>
-
+import ButtonsCmp from './ButtonsCmp.vue'
 </script>
 <template>
-<h1>Exercici 2</h1>
+<h1>Comptador</h1>
+<ButtonsCmp />
 </template>
 <style scoped>
 
