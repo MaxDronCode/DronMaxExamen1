@@ -2,9 +2,9 @@
 import users from '/data/users.json'
 import { ref, computed, watch } from 'vue'
 const userInput = ref('')
-// TODO falta que sigui case insensitive
+const normalizedInput = computed(() => userInput.value.toLocaleLowerCase())
 const filteredUsers = computed(() => {
-  return users.filter((user) => user.name.includes(userInput.value))
+  return users.filter((user) => user.name.toLowerCase().includes(normalizedInput.value))
 })
 watch(userInput, (newValue, oldValue) => console.log(`Filtre canviat: ${userInput.value}`))
 </script>
